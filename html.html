@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linguagem HTML</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Linguagem HTML</title>
+        <style>
         h1{color: #87CEFA;}
         span{font-size: 1.5em;}
         section {
@@ -19,86 +19,106 @@
         div{ background-color:lightgoldenrodyellow;}
 
         h2{color:#87CEFA;}
+        table, td{ border: 1px solid black;
+        border-collapse: collapse;}
    
     </style>
-</head>
-<body>
-    <div draggable= "true">
-    <h1>Origem do HTML</h1>
-    <p>Linguagem de marcação criada por <a href = "https://en.wikipedia.org/wiki/Tim_Berne"><strong> 
-        Tim Bernes Lee (1990)</strong></a> para compartilhamento de documento no <br> CERN</p>
-   
-    <img src="./img/imagemCERN.jpg" alt="Imagem do CERN">
-    </div>
-    
-    <hr>
+    </head>
+    <body>
+        <div draggable="true">
+            <h1>Origem do HTML</h1>
+            <p>Linguagem de marcação criada por <a
+                    href="https://en.wikipedia.org/wiki/Tim_Berne"><strong>
+                        Tim Bernes Lee (1990)</strong></a> para compartilhamento
+                de documento no <br> CERN</p>
+
+            <img src="./img/imagemCERN.jpg" alt="Imagem do CERN">
+        </div>
+
+        <hr>
         <section>
-    <h2> Arquitetura Cliente servidor da WEB </h2>
-    <p> As tecnologias fundamentais que compoem a WEB são: </p>
-    <ul>
-            <li>Arquitetura cliente servidor</li>
-            <li>HTTP - Hyper Text Transfer Protocol</li>
-            <li><em>HTML - Hyper Text Markup Language</em><del> é uma linguagem de programação</del><sub>nota1</sub></li>
-            <li>Navegador Cliente - </li>
-            <li>Servidor Web</li>
-    </ul>
-    <img src="./img/clienteServidor02.png" alt="">
+            <h2> Arquitetura Cliente servidor da WEB </h2>
+            <p> As tecnologias fundamentais que compoem a WEB são: </p>
+            <ul>
+                <li>Arquitetura cliente servidor</li>
+                <li>HTTP - Hyper Text Transfer Protocol</li>
+                <li><em>HTML - Hyper Text Markup Language</em><del> é uma
+                        linguagem de programação</del><sub>nota1</sub></li>
+                <li>Navegador Cliente - </li>
+                <li>Servidor Web</li>
+            </ul>
+            <img src="./img/clienteServidor02.png" alt>
         </section>
-   <p>Ao longo dos anos a web evoluiu e novas tecnologias foram incorporadas como <span>CSS</span> e JavaScript</p>
+        <p>Ao longo dos anos a web evoluiu e novas tecnologias foram
+            incorporadas como <span>CSS</span> e JavaScript</p>
 
-   <p>a=ax+bx<sub>2</sub>+c</p>
+        <p>a=ax+bx<sub>2</sub>+c</p>
 
-   <section id= listas>
-    <p> O HTML possui listas nao ordenadas, ordenadas e detalhes, criada com as tags ul, ol, dl</p>
+        <section id=listas>
+            <p> O HTML possui listas nao ordenadas, ordenadas e detalhes, criada
+                com as tags ul, ol, dl</p>
 
-    <p>Lista não ordenada</p>
-    <ul>
-        <li> pera </li>
-        <li> uva </li>
-        <li> maça </li>
-    </ul>
+            <p>Lista não ordenada</p>
+            <ul>
+                <li> pera </li>
+                <li> uva </li>
+                <li> maça </li>
+            </ul>
 
-    <p> Lista ordenada</p>
-    <ol type="i" >
-         <li> pera </li>
-        <li> uva </li>
-        <li> maça </li>
-    </ol>
+            <p> Lista ordenada</p>
+            <ol type="i">
+                <li> pera </li>
+                <li> uva </li>
+                <li> maça </li>
+            </ol>
 
-<dl>
-    <dt>leite</dt>
-    <dd>bebida nutreica extraida de mamiferos</dd>
-    
-    <dt>café</dt>
-    <dd>bebida obtida com a torra e fervura de grão de café, essencial a vida </dd>
-    
-</dl>
-   <section i="tabelas">
-    <p>O HTML fornece suporte a tabelas por meio da tag table, e outras tags, como tag definição de linha &lt tr &gt <i>table row</i>, criação de celular com tag &lt td &gt <i>table data</i>
-    </p>
+            <dl>
+                <dt>leite</dt>
+                <dd>bebida nutreica extraida de mamiferos</dd>
 
-    <table>
-    <caption>Churrasco finaleira</caption>
-    <tr>
-        <td>indice</td><td>nome</td><td>valor</td>
-    </tr>
-    <tr>
-         <td>1</td><td>carne</td><td>50,00</td>
-    </tr>
-    <tr>
-        <td>2</td><td>linguiça</td><td>50,00</td>
-    </tr>
-    <tr>
-        <td>3</td><td>carvão</td><td>30,00</td>
-    </tr>
-    <tr>
-        <td>4</td><td>Água com gás</td><td>30,00</td>
-    </tr>
-    <tr>
-        <td>5</td><td>Refrigerante</td><td>60,00</td>
-    </tr>
-    
-    </table>
-        </section>
-</body>
-</html>
+                <dt>café</dt>
+                <dd>bebida obtida com a torra e fervura de grão de café,
+                    essencial a vida </dd>
+
+            </dl>
+            <section i="tabelas">
+                <p>O HTML fornece suporte a tabelas por meio da tag table, e
+                    outras tags, como tag definição de linha &lt tr &gt <i>table
+                        row</i>, criação de celular com tag &lt td &gt <i>table
+                        data</i>
+                </p>
+
+                <table>
+                    <caption>Churrasco finaleira</caption>
+                    <tr>
+                        <td>indice</td><td>categoria</td><td>nome</td><td>valor</td>
+                    </tr>
+                    <tr>
+                        <td>1</td><td>carnes</td><td>carne</td><td>50,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td><td>embutidos</td><td>linguiça</td><td>50,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td><td>outros</td><td>carvão</td><td>30,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td><td>bebidas</td><td>Água com
+                            gás</td><td>30,00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td></td><td>bebidas<td>Refrigerante</td><td>60,00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td><td>pães</td><td>Pão de
+                            alho</td><td>40,00</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" rowspan="1">total</td>
+                        <td>260,00</td>
+                    </tr>
+                </table>
+            </section>
+        </body>
+    </html>
