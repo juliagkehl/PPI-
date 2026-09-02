@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Box</title>
+    
+<style>
+    #modelbox {
+        width: 300px;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Modelo em caixa, Model Box HTML</h1>
+
+    <p>Os elemento HTML são estruturados em um modelo denominado modelbox, que 
+        refere-se acaracterostoca de um elemento pode conter outros elemnos, sendo que cada um
+        possui uma estrutura interna, similar a idaia e uma caixa dentro da outra</p>
+
+        <h2>Estruura de um elemento HTML</h2>
+        <p>todos os elemento html posum contéudo, pading, borda, offset.
+            Sendo a região de conteudo etruturada em tres camadas
+            <br>1) background-color<br> 2)background-image<br>3)Content </p>
+       
+       
+            <img id = "modelbox" src = "img/boxmodel.png" alt ="modelbox">
+
+            <div id = "divtexto">Texto</div>
+            <span>texto2</span>
+
+        <style>
+
+    #divtexto{
+        /*borda da página*/
+        border: 1px solid rgba(255, 0, 100, 0.5);
+        /*padding = é o meio*/
+        padding: 20px;
+        margin: 25px;
+        outline: 1px solid red ;
+        outline-offset:5px;
+        background-color: yellow;
+        background-image: url(img/image.png);
+        background-size: 100px;
+    }
+
+
+    </style>
+    
+
+       
+</body>
+</html>
+qustao de prova quak o tamanho do elmneto com base no tamanho dos elementos, pding etc

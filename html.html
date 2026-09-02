@@ -7,7 +7,13 @@
         <link rel="stylesheet" href="style.css">
         <style>
             
-        h1{color: #87CEFA;}
+            /*deixa todos elementos da pagina com a cor selecionada, tem baixa especificidade*/
+            *{
+                background-color: #87CEFA;
+            }
+            
+        
+        h1{color: black;}
         span{font-size: 1.5em;}
         section {
             border-top-color:dodgerblue;
@@ -159,3 +165,9 @@
             </section>
         </body>
     </html>
+  <!--Enquanto nao definir a altura e o tamanho em html os elmentos vao ficar em fluxo, nao ocupando a tela toda-->
+  <!--Position relative permite mudar a posicao do elemento a partir da posicao estatica dele -->
+  <!--Position fixed: tela viewport Quando determina position fixed ele cria uma camada na frente,
+   nao se mistura com os outros elementos pq ta em outra camada-->
+   <!--Position absolute tambm cria uma nova camada, ele se posiciona em relacao ao primeiro
+   ancestral do estatico-->
