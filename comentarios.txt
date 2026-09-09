@@ -23,9 +23,6 @@ ancestral do nao estatico
 
 display: inline-block, 
 
-
-
-
 SELETORES
    
 * - universal
