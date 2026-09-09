@@ -19,7 +19,7 @@ Position fixed: tela viewport Quando determina position fixed ele cria uma camad
 nao se mistura com os outros elementos pq ta em outra camada
 
 position absolute tambem cria uma nova camada, ele se posiciona em relacao ao primeiro
-ancestral do estatico
+ancestral do nao estatico
 
 display: inline-block, 
 
