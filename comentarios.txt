@@ -40,4 +40,6 @@ seletor por nome tag h1,p, td
 <!--questao de prova qual o tamanho do elemento com base no tamanho dos elementos, padding etc.-->
 
 
-div#box$.box{box$}*5 comando pra criar 5 boxes de uma ve s
+div#box$.box{box$}*5 comando pra criar 5 boxes de uma vez
+
+https://css-tricks.com/complete-guide-css-grid-layout/ guia de layouts em css
