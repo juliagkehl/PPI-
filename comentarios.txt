@@ -1,4 +1,4 @@
-formularios
+FORMULARIOS
 
 form action =./index.php"
 define o destino para onde os dados vao ser encaminhados
@@ -7,13 +7,12 @@ method pode ser post ou get
 no post os dados nao sao visiveis na url
 get: url, compartilhar ursinho do stitch
 
-
 POSITION
 
-Position Static é o padão o html, Enquanto nao definir a altura e o tamanho em html os elementos vao ficar em fluxo, 
-nao ocupando a tela toda
+Position Static é o padrão o html, Enquanto nao definir a altura e o tamanho em html os elementos vao ficar em fluxo, 
+nao ocupando  necessariamente a tela toda
 
-Position relative permite mudar a posicao do elemento a partir da posicao estatica dele 
+Position relative permite mudar a posicao do elemento a partir da posicao estatica dele -**top, left, right, bottom**
 
 Position fixed: tela viewport Quando determina position fixed ele cria uma camada na frente,
 nao se mistura com os outros elementos pq ta em outra camada
@@ -21,7 +20,10 @@ nao se mistura com os outros elementos pq ta em outra camada
 position absolute tambem cria uma nova camada, ele se posiciona em relacao ao primeiro
 ancestral do nao estatico
 
-display: inline-block, 
+display: inline-block;
+display: flex - caixas  flexiveis;
+
+jogo para treinar: flexbox froggy
 
 SELETORES
    
@@ -33,11 +35,9 @@ seletor por nome tag h1,p, td
 
 # id
 
-   [dragable = true]
-
-
+[dragable = true]
    
 <!--questao de prova qual o tamanho do elemento com base no tamanho dos elementos, padding etc.-->
 
 
-div#box$.box{box$}*5
+div#box$.box{box$}*5 comando pra criar 5 boxes de uma ve s
