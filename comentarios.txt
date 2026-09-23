@@ -43,3 +43,6 @@ seletor por nome tag h1,p, td
 div#box$.box{box$}*5 comando pra criar 5 boxes de uma vez
 
 https://css-tricks.com/complete-guide-css-grid-layout/ guia de layouts em css
+
+grid vai cai na prova!!!!!!!!!!
+nem la no trigtrinho eu levei tanto golpe eu me apaicpnei pela mina do job era so foda e nao era love era so salsa e nao era loooovee
