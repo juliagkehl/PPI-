@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores e Especificidade</title>
+
+    <style>
+        /* A primeira regra dita que tTdos os elementos  que forem <li> começam com a cor vermelha. */
+        li {
+            color: red;
+        }
+
+        /* Aqui incrementa que os elementos que possuem a classe "churras"  vão ficar ficarverdes */
+        .churras {
+            color: green;
+        }
+
+        /* Aqui incrementa que os elementos que possuem a classe "fruta"  vão ficar cinza */
+        .fruta {
+            color: gray;
+        }
+
+        /*Seleciona um <li> com a classe "churras" que vem depois de outro <li> ela deixa a cor preta */
+        li+li.churras {
+            color: black;
+        }
+
+        /* aqui seleciona os elementos com a classe "churras"que possuem draggable="true" a cor dele vira magenta */
+        .churras[draggable="true"] {
+            color: magenta;
+        }
+
+        /*Seleciona especificamente os elementos que possuem os IDs lip1, lip2 ou lip3 a cor fica azul
+        o #(id) é mais específico */
+        #lip1,
+        #lip2,
+        #lip3 {
+            color: blue;
+        }
+
+        /* ele seleciona o elemento que possui ao mesmo tempo o ID lip3 e a classe fruta a cor do elemento cor fica laranja*/
+        #lip3.fruta {
+            color: orange;
+        }
+
+        /* e por ultimo seleciona um <li> que possui a classe "churras" e o ID "lip5", que é filho de <ol>
+           A cor fica roxa */
+        ol>li.churras#lip5 {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ol>
+
+        <li id="lip0">Abacaxi</li>
+        <li class="fruta">Melão</li>
+        <li id="lip2" class="fruta">Pera</li>
+        <li id="lip3" class="fruta">Uva</li>
+        <li id="lip4" class="fruta">Maçã</li>
+        <li class="churras">Carne</li>
+        <li class="churras">Linguiça</li>
+        <li id="lip7" class="churras" draggable="true">
+            Pão de alho
+        </li>
+
+    </ol>
+
+</body>
+
+</html>
