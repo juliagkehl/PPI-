@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+}
+
+.curriculo {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.lado {
+    width: 25%;
+    min-height: 100vh;
+    background-color: #414852;
+    color: white;
+    padding: 40px;
+}
+
+.foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 40px;
+}
+
+.lado h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 12px;
+}
+
+.informacao {
+    margin-bottom: 25px;
+}
+
+.informacao strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.informacao span {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.conteudo {
+    width: 75%;
+    padding: 60px 70px;
+}
+
+.conteudo h1 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.linha {
+    height: 2px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.titulo-secao {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.experiencia {
+    margin-bottom: 35px;
+}
+
+.cabecalho-experiencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.cargo {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.data {
+    color: #777;
+    font-size: 14px;
+}
+
+.empresa {
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+ul {
+    padding-left: 25px;
+    color: #555;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+</style>
+
+    </style>
+</head>
+
+<body>
+
+<div class="curriculo">
+
+<aside class="lado">
+
+<img src="./imagens/joana.png" alt="" class="foto">
+
+<h3>Pessoal</h3>
+
+<div class="informacao">
+<strong>Nome</strong>
+<span>Joana Barbosa</span>
+</div>
+
+    <div class="informacao">
+    <strong>Endereço</strong>
+    <span>Rua da Paz, 250<br>7100-011 Lisboa</span>
+    </div>
+
+    <div class="informacao">
+    <strong>Número de telefone</strong>
+    <span>9630002121</span>
+            </div>
+
+            <div class="informacao">
+                <strong>Email</strong>
+                <span>exemplo@cvmaker.pt</span>
+            </div>
+
+            <h3>Interesses</h3>
+
+        </aside>
+
+        <main class="conteudo">
+
+        <h1>Joana Barbosa</h1>
+
+        <div class="linha"></div>
+
+        <p class="descricao">
+                Uma market digital com sentido de missão e com mais de três anos
+                de experiência em conduzir iniciativas promocionais. Sou uma
+                especialista em online marketing, lead generation, nurturing.
+                Tenho uma comunicação exemplar, aptidões interpessoais e trabalho
+                em sobre pressão de forma a atingir os objetivos.
+            </p>
+
+            <h2 class="titulo-secao">Experiência profissional</h2>
+
+            <div class="linha"></div>
+
+            <section class="experiencia">
+
+                <div class="cabecalho-experiencia">
+                    <span class="cargo">Junior SEO Marketer</span>
+                    <span class="data">2017 - 2019</span>
+                </div>
+
+                <div class="empresa">Cyança, Lisboa</div>
+
+                <ul>
+                    <li>Página on/off SEO</li>
+                    <li>Estratégias de linkbuilding</li>
+                    <li>Criação de conteúdo relevante</li>
+                    <li>
+                        Trabalho com ferramentas online:
+                        Ahrefs, Google Analytics, Google Search Console,
+                        Google Adwords
+                    </li>
+                </ul>
+
+            </section>
+
+            <section class="experiencia">
+
+                <div class="cabecalho-experiencia">
+                    <span class="cargo">Assistente de Vendas</span>
+                    <span class="data">2015 - 2016</span>
+                </div>
+
+                <div class="empresa">Salsa, Lisboa</div>
+
+                <ul>
+                    <li>Contribuição para os objetivos de vendas</li>
+                    <li>Gestão de inventário</li>
+                    <li>Apoio a clientes</li>
+                </ul>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
