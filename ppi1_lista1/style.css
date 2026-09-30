@@ -186,8 +186,6 @@ body {
     color: #292347;
 }
 
-/* Parte superior */
-
 header {
     text-align: center;
     margin-bottom: 25px;
@@ -203,8 +201,6 @@ header p {
     font-size: 16px;
 }
 
-/* Área do formulário */
-
 main {
     width: 650px;
     max-width: 90%;
@@ -217,9 +213,6 @@ form {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(64, 45, 130, 0.15);
 }
-
-/* Caixa do formulário */
-
 fieldset {
     border: 2px solid #8271c7;
     border-radius: 10px;
@@ -234,8 +227,6 @@ legend {
     font-weight: bold;
 }
 
-/* Labels */
-
 label {
     display: block;
     margin-top: 15px;
@@ -244,7 +235,6 @@ label {
     font-weight: bold;
 }
 
-/* Campos */
 
 input,
 select,
@@ -258,9 +248,7 @@ textarea {
     font-size: 14px;
     background-color: #faf9ff;
 }
-
-/* Quando clicar no campo */
-
+/*essa parte pesqwuisei nao sabia fazer*/
 input:focus,
 select:focus,
 textarea:focus {
@@ -269,13 +257,10 @@ textarea:focus {
     box-shadow: 0 0 4px rgba(104, 73, 184, 0.3);
 }
 
-/* Mensagem */
-
 textarea {
     resize: vertical;
 }
 
-/* Botão */
 
 button {
     display: block;
@@ -325,4 +310,276 @@ button:hover {
 .voltar:hover {
     color: #2f7ebc;
     text-decoration: underline;
+}
+
+.pagina-curriculo {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f3ff;
+    color: #29264a;
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho-curriculo {
+    background: linear-gradient(135deg, #49358f, #315fa8);
+    color: white;
+    padding: 45px 20px;
+}
+
+.perfil {width: 900px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;}
+
+.perfil img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dados-pessoais {
+    flex: 1;
+}
+
+.dados-pessoais h1 {
+    margin: 0;
+    color: white;
+    font-size: 38px;
+}
+
+.cargo {
+    font-size: 18px;
+    margin-top: 8px;
+    color: #e7eaff;
+}
+
+.contatos {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contatos a {
+    color: white;
+    text-decoration: none;
+}
+
+.contatos a:hover {
+    text-decoration: underline;
+}
+
+.menu-curriculo {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 17px;
+    box-shadow: 0 2px 8px rgba(40, 30, 80, 0.12);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu-curriculo a {
+    color: #49358f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-curriculo a:hover {
+    color: #315fa8;
+}
+
+.conteudo-curriculo {
+    width: 900px;
+    max-width: 90%;
+    margin: 35px auto;
+}
+
+.card-curriculo {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 28px;
+    border-radius: 12px;
+
+}
+
+.card-curriculo h2 {
+    margin-top: 0;
+    color: #49358f;
+    border-bottom: 2px solid #e1def5;
+    padding-bottom: 10px;
+}
+
+.card-curriculo p {
+    line-height: 1.6;
+}
+
+.lista-habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding-left: 20px;
+}
+
+.lista-habilidades li {
+    color: #45416b;
+}
+
+.destaque-habilidade {
+    background-color: #eef0ff;
+    border-radius: 8px;
+    padding: 13px;
+    margin-top: 20px;
+    color: #49358f;
+}
+
+.destaque-habilidade span {
+    font-weight: bold;
+}
+
+
+.item-formacao {
+    background-color: #f7f7ff;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.item-formacao h3 {
+    color: #315fa8;
+    margin-top: 0;
+}
+
+.experiencia-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd9ef;
+}
+
+.experiencia-item:last-child {
+    border-bottom: none;
+}
+
+.experiencia-item h3 {
+    color: #315fa8;
+}
+
+mark {
+    background-color: #ddd5ff;
+    color: #49358f;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.conhecimentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.conhecimentos p {
+    background-color: #f5f6ff;
+    padding: 12px;
+    border-radius: 6px;
+} 
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+.pagina-curriculo table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:20px;
+}
+
+.pagina-curriculo th {
+    background-color: #51409b;
+    color: white;
+    padding: 12px;
+    border: 1px solid #443580;
+}
+
+.pagina-curriculo td {
+    padding: 11px;
+    text-align: center;
+    border: 1px solid #d5d2e4;
+}
+
+.pagina-curriculo tbody tr:nth-child(even) {
+    background-color: #f5f4ff;
+}
+
+.pagina-curriculo tbody tr:hover {
+    background-color: #e9e7fa;
+}
+
+
+summary {
+    cursor: pointer;
+    color: #49358f;
+    font-weight: bold;
+    padding: 5px;
+}
+
+summary:hover {
+    color: #315fa8;
+}
+
+.link-externo {
+    color: #315fa8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-externo:hover {
+    text-decoration: underline;
+}
+
+.rodape-curriculo {
+    background-color: #29264a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.rodape-curriculo p {
+    margin: 6px;
+}
+
+@media (max-width: 700px) {
+
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dados-pessoais h1 {
+        font-size: 30px;
+    }
+
+    .contatos {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .menu-curriculo {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .lista-habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    .conhecimentos {
+        grid-template-columns: 1fr;
+    }
+
 }
