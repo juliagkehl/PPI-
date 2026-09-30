@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    margin: 30px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #b83265;
+    margin-bottom: 5px;
+}
+
+/* Tabela */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(184, 50, 101, 0.15);
+}
+
+/* Legenda */
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7a2949;
+    margin-bottom: 12px;
+}
+
+/* Cabeçalho */
+th {
+    background-color: #c94f7c;
+    color: white;
+    padding: 12px;
+    border: 1px solid #a83d65;
+}
+
+/* Células */
+td {
+    padding: 9px 12px;
+    border: 1px solid #e5b8c9;
+    text-align: center;
+}
+
+/* Nome dos estados sempre alinhado à esquerda */
+tbody td a {
+    display: block;
+    text-align: left;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(even) {
+    background-color: #fff5f8;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Efeito quando passa o mouse */
+tbody tr:hover {
+    background-color: #fbd6e3;
+}
+
+/* Links */
+a {
+    color: #c2185b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #8e1744;
+    text-decoration: underline;
+}
+
+/* Região */
+td[rowspan] {
+    background-color: #f8d7e3;
+    color: #8e1744;
+    font-weight: bold;
+}
+
+/* Rodapé */
+tfoot td {
+    background-color: #a83d65;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
