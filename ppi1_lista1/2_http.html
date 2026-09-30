@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP</title>
+</head>
+
+<body>
+
+    <h1>Protocolo HTTP e seu uso na Web</h1>
+    <hr>
+
+    <h2>O que é HTTP?</h2>
+
+    <p>HTTP significa<strong>HyperText Transfer Protocol</strong>, ou <strong>Protocolo de Transferência de
+            Hipertexto</strong>.
+        Ele é um protocolo utilizado para permitir a comunicação entreo navegador e um servidor na Web.<br>
+        Quando acessamos um site, o navegador envia uma requisição para um servidor, <br>
+        O servidor recebe essa requisição, processa a informação e envia uma <strong>resposta (response)</strong> de
+        volta.
+
+
+    <h2>Como o HTTP funciona?</h2>
+    <p> O funcionamento básico pode ser representado da seguinte forma:</p>
+    <img src="./imagem/imagemhttp.png" alt="" width="300">
+
+
+    <p>Por exemplo, quando digitamos "www.exemplo.com" no navegador, ele precisa solicitar ao servidor os arquivos
+        necessários para
+        mostrar a página.</p>
+
+    <h2>Principais métodos HTTP</h2>
+
+    <table border="1">
+
+        <caption>Métodos HTTP mais comuns</caption>
+
+        <thead>
+            <tr>
+                <th>Método</th>
+                <th>Função</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>GET</td>
+                <td>Solicita informações ao servidor.</td>
+            </tr>
+
+            <tr>
+                <td>POST</td>
+                <td>Envia informações para o servidor.</td>
+            </tr>
+
+            <tr>
+                <td>PUT</td>
+                <td>Atualiza uma informação no servidor.</td>
+            </tr>
+
+            <tr>
+                <td>DELETE</td>
+                <td>Solicita a exclusão de uma informação.</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h2>Como fazer pra capturar uma requisição no navegador?</h2>
+
+    <p>Podemos observar requisições HTTP utilizando as ferramentas
+        de desenvolvedor dentro do navegador. </p>
+
+    <ol>
+        <li>Abra um site no navegador.</li>
+        <li>Pressione a tecla F12.</li>
+        <li>Entre na aba <strong>Network</strong> (Rede).</li>
+        <li>Atualize a página.</li>
+        <li>Clique em uma das requisições mostradas.</li>
+        <li>Observe as informações de Request e Response.</li>
+    </ol>
+
+    <p>Na aba Network é possível visualizar informações como o método utilizado, endereço da página, código de resposta, tipo de
+    conteúdo e outros campos da comunicação.</p>
+
+
+</body>
+
+</html>
