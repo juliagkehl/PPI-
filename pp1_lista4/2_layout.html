@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            min-height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            min-height: 100vh;
+            grid-template-areas:
+                "header header"
+                "nav content"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 10% 1fr 10%;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #df3880;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #c4c58d;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: content;
+            display: contents;
+        }
+
+        content {
+            grid-area: content;
+            background-color: #e5ad88;
+            padding: 20px;
+            display: block;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #6eb494;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <p>Header</p>
+        </header>
+
+        <nav>
+            <p>Nav</p>
+        </nav>
+
+        <content>
+            <p>Content</p>
+        </content>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
