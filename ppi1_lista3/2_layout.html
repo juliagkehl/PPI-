@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+
+        body { display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: white;}
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 150px;
+            height: 250px;
+            padding: 15px;
+            border: 2px solid #d000ff;
+            box-sizing: border-box;}
+
+        .logo {font-size: 8px;
+        color: #999999;}
+
+        .ret {width: 120px;
+        height: 12px;
+        background-color: #e5e5e5;
+        border-radius: 3px;}
+
+        .circ {width: 32px;
+        height: 32px;
+        background-color: #e5e5e5;
+        border-radius: 50%;}
+
+        .retM {
+        width: 52px;
+        height: 12px;
+        background-color: #e5e5e5;
+        border-radius: 3px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            Company Logo
+        </div>
+
+        <div class="ret"></div>
+        <div class="ret"></div>
+        <div class="ret"></div>
+        <div class="ret"></div>
+
+        <div class="circ"></div>
+
+        <div class="retM"></div>
+
+    </div>
+
+</body>
+
+</html>
