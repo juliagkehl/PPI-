@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layout com Flexbox</title>
+
+    <style>
+
+        * {margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+            height: 100vh;
+            padding: 70px 7%;
+            background-color: white;
+        }
+
+
+        .card {
+            position: relative;
+            width: 9%;
+            height: 80%;
+            border-radius: 28px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .principal {
+            position: relative;
+            width: 55%;
+            height: 80%;
+            border-radius: 28px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .principal img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .icone {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .informacao {
+            position: absolute;
+            bottom: 20px;
+            left: 25px;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .informacao h2 {
+            margin-bottom: 3px;
+            font-size: 20px;
+        }
+
+        .informacao p {
+            font-size: 13px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <img src="imagens/foto1.jpg" alt="Paisagem 1">
+
+            <div class="icone" style="background-color: #e85d75;">
+                🌲
+            </div>
+
+        </div>
+
+        <div class="principal">
+
+            <img src="imagens/foto2.jpg" alt="Paisagem principal">
+
+            <div class="icone" style="background-color: #e85d75;">
+                🌲
+            </div>
+
+            <div class="informacao">
+
+                <h2>Professor romulo/h2>
+                <p>Uma linda paisagem natural</p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagens/foto3.webp" alt="Paisagem 3">
+
+            <div class="icone" style="background-color: #e8a93a;">
+                🌅
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagens/foto1.jpg" alt="Paisagem 4">
+
+            <div class="icone" style="background-color: #42b883;">
+                🌿
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagens/foto2.jpg" alt="Paisagem 5">
+
+            <div class="icone" style="background-color: #5386e4;">
+                🌊
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
