@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Perfil</title>
+
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 600px;
+            height: 205px;
+            margin-top: 85px;
+            padding: 15px;
+            background-color: darkgray;
+            box-sizing: border-box;
+        }
+
+        .lista {
+            display: flex;
+            flex-direction: column;
+            width: 175px;
+            background-color: white;
+
+        }
+
+        .perfil {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 45px;
+            gap: 10px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .perfil:last-child {
+            border-bottom: none;
+        }
+
+        .imagem img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .informa {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .nome {
+            margin: 0;
+            font-size: 10px;
+            color: #444;
+        }
+
+        .loc {
+            margin: 0;
+            font-size: 8px;
+            color: #aaaaaa;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="lista">
+
+            <div class="perfil">
+
+                <div class="imagem">
+                    <img src="imagens/macaco1.jpg" alt="Perfil 1">
+                </div>
+
+                <div class="informa">
+                    <p class="nome"><strong>Macaco fofo</strong></p>
+                    <p class="loc">6765 Shady Ln Dr</p>
+                </div>
+
+            </div>
+
+            <div class="perfil">
+
+                <div class="imagem">
+                    <img src="imagens/macaco2.jpg" alt="Perfil 2">
+                </div>
+
+                <div class="informa">
+                    <p class="nome"><strong>Macaco estressado</strong></p>
+                    <p class="loc">2420 Paddock Way</p>
+                </div>
+
+            </div>
+
+
+            <div class="perfil">
+
+                <div class="imagem">
+                    <img src="imagens/macaco3.png" alt="Perfil 3">
+                </div>
+
+                <div class="informa">
+                    <p class="nome"><strong>Macaco astuto</strong></p>
+                    <p class="loc">6727 Airplane Ave</p>
+                </div>
+
+            </div>
+
+
+            <div class="perfil">
+
+                <div class="imagem">
+                    <img src="imagens/macacocareca.jpg" alt="Perfil 4">
+                </div>
+
+                <div class="informa">
+                    <p class="nome"><strong>Macacao careca</strong></p>
+                    <p class="loc">6685 Blossom Hill Rd</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
