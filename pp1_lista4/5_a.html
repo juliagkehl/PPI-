@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdos Web</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            min-height: 95vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 0.6fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 6px;
+        }
+
+        .item {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .html {
+            grid-column: 1;
+            grid-row: 1;
+            background-color: #f6a623;
+        }
+
+        .css {
+            grid-column: 1;
+            grid-row: 2;
+            background-color: #aebfda;
+        }
+
+        .animate {
+            grid-column: 2;
+            grid-row: 1 / 3;
+            background-color: #f2b29f;
+        }
+
+        .position {
+            grid-column: 1 / 3;
+            grid-row: 3;
+            background-color: #f5b82e;
+        }
+
+        .flex {
+            grid-column: 3;
+            grid-row: 2 / 4;
+            background-color: #b8ca70;
+        }
+
+        .grid {
+            grid-column: 3 / 5;
+            grid-row: 1;
+            background-color: #c6dddd;
+        }
+
+        .links {
+            grid-column: 4;
+            grid-row: 2 / 4;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .links a {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .l1 {
+            background-color: #ee9560;
+        }
+
+        .l2 {
+            background-color: #d9aaaa;
+        }
+
+        .l3 {
+            background-color: #b7c98b;
+        }
+
+        .l4 {
+            background-color: #c6b4df;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .item {
+                min-height: 100px;
+            }
+
+            .links {
+                flex-direction: row;
+                min-height: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="item html">
+            <a href="../ppi1_lista1/2_http.html">
+                HTML
+            </a>
+        </div>
+
+        <div class="item css">
+            <a href="../ppi1_lista2/5_perfil.html">
+                CSS
+            </a>
+        </div>
+
+        <div class="item animate">
+              <a href="../ppi1_lista2/6_barquinho.html">
+                Animate
+            </a>
+        </div>
+
+        <div class="item position">
+            <a href="../ppi1_lista2/4c_display.html">
+                Position
+            </a>
+        </div>
+
+        <div class="item flex">
+            <a href="../ppi1_lista3/5_layout_flex.html">
+                Flexbox
+            </a>
+        </div>
+
+        <div class="item grid">
+            <a href="../ppi1_lista3/6_grid_layout.html">
+                Grid
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
