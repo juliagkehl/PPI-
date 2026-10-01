@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Garden</title>
+</head>
+
+<body>
+
+    <h1>Grid Garden</h1>
+
+    <p>Concluí o jogo Grid Garden:</p>
+
+    <h2>Fase 19</h2>
+
+    <p>Print da fase 19:</p>
+
+    <img src="img/nivel19.png" alt="Print da fase 19" width="600px">
+
+    <p> Nessa fase foi utilizada a propriedade <strong>order</strong>para mudar a ordem dos elementos dentro do Grid</p>
+
+    <p>O código utilizado foi:</p>
+    <pre>
+    #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.water {
+    order: 0;
+}
+
+.poison {
+    order: -1;
+}
+    </pre>
+
+    <p>O <strong>order: 0</strong> deixa a água na ordem normal, o <strong>order: -1</strong> faz os venenos ficarem antes dos
+        elementos que possuem uma ordem maior. </p>
+
+    <p> Assim, os elementos ficam na ordem necessária para completar a fase.</p>
+
+</body>
+
+</html>
