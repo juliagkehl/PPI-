@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layout Flex</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {font-family: Arial, sans-serif;
+            min-height: 100vh;}
+
+        .container { display: flex;
+            flex-direction: column;
+
+            width: 100%;
+            min-height: 100vh;}
+
+        header {display: flex;
+            align-items: center;
+            height: 16vh;
+            padding: 20px;
+            background-color: #8bd000;
+        }
+
+        header p,
+        footer p,
+        article p,
+        aside p,
+        nav p {
+            font-size: 16px;}
+
+        main { display: flex;
+            flex: 1;
+            min-height: 68vh;}
+
+        article {display: flex;
+            align-items: flex-start;
+            width: 65%;
+            padding: 20px;
+            background-color: #ffffff;}
+
+        aside {display: flex;
+            align-items: flex-start;
+            width: 18%;
+            padding: 20px;
+            background-color: #f5f2d5;}
+
+        nav {display: flex;
+            align-items: flex-start;
+            width: 17%;
+            padding: 20px;
+            background-color: #d4e8d1;}
+
+        footer {display: flex;
+            align-items: center;
+            height: 16vh;
+            padding: 20px;
+            background-color: #8bd000;}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <p>Header</p>
+        </header>
+
+
+        <main>
+
+            <article>
+                <p>Article</p>
+            </article>
+
+            <aside>
+                <p>Aside</p>
+            </aside>
+
+            <nav>
+                <p>Nav</p>
+            </nav>
+
+        </main>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
