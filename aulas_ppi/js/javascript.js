@@ -2,15 +2,15 @@
 
 /*Comentario de varias linha*/
 
-//Tres formas de declarar uma váriavel (sem tipo)
-//O var  o let se distinguem pelo escopo e declaração
+//Tres formas de declarar uma variavel (sem tipo)
+//O var  o let se distinguem pelo escopo e declaracao
 let nome = "Julia";
 var sobreNome;
 
 if (nome =="Julia"){
     sobreNome = "Kehl"
     let idade = 20;
-    var pet ="lili  laila";
+    var pet ="lili & laila";
      console.log("nome: " + nome + " sobrenome: " + sobreNome + " idade: " + idade + " pet: " + pet);
    
 }
@@ -62,7 +62,7 @@ switch(a){
     case 3==3: console.log("C"); break;
     default: console.log("D");
 }
-//Estrutura de repetição while
+//Estrutura de repeticao while
 let i=0;
 while(i<5){
     console.log(i);
@@ -77,5 +77,40 @@ for(let i=0; i<5;i++){
 //arrays
 let frutas = ["morango", "banana", "manga", "kiwi"];
 frutas.forEach((v1, index) =>{
-    console.log(v1 + "index: " + index);
+    console.log(v1 + " index: " + index);
 })
+
+var itensChurrasco =[];
+itensChurrasco.push("costela");
+itensChurrasco.push("pão de alho");
+itensChurrasco.push("linguiça");
+itensChurrasco.push("pãozinho");
+
+for (let i=0; i<itensChurrasco.lenght-1;i++){
+
+}
+itensChurrasco.forEach((e,i)=>{
+console.log(i+ "-"+e);
+});
+
+//Array.forEach (() -{})
+
+nome = "Julia Gabriely Kehl";
+//como inverter string = 
+console.log(nome.split("").reverse().join());
+//a funcao split quebra a string,  'J', 'u', 'l', 'i', 'a', ' ', 'G', 'a', 'b', 'r','i', 'e', 'l', 'y', ' ','K', 'e', 'h', 'l'
+
+itensChurrasco.map((e)=>{
+    console.log(e.lenght);
+});
+
+//itens
+itensChurrasco.filter((e)=> {
+!(e== "pãozinho");console.log(e); return !e=="romops"});
+
+//filter
+console.log(itensChurrasco.filter((e,i)=> {
+    return i!=3}));
+    //filtra por qualquer elemento
+console.log(itensChurrasco.filter((e,i)=> {
+    return i!=2}));

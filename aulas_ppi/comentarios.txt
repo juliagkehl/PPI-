@@ -39,10 +39,19 @@ seletor por nome tag h1,p, td
    
 <!--questao de prova qual o tamanho do elemento com base no tamanho dos elementos, padding etc.-->
 
-
-div#box$.box{box$}*5 comando pra criar 5 boxes de uma vez
+div#box$.box{box$}*5 comando pra criar 5 boxes de uma vez, o $ define a multiplicacao pelo numero no final, se fosse  
+div#box$.box{box$}*1000 criaria 1000 boxes de uma vez
 
 https://css-tricks.com/complete-guide-css-grid-layout/ guia de layouts em css
 
 grid vai cai na prova!!!!!!!!!!
 nem la no trigtrinho eu levei tanto golpe eu me apaicpnei pela mina do job era so foda e nao era love era so salsa e nao era loooovee
+
+definir variaveis javaScript
+var b;
+let a;
+const c;
+
+if else; for; switch;
+
+String, Number, null, undefided
