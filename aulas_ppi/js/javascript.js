@@ -114,3 +114,7 @@ console.log(itensChurrasco.filter((e,i)=> {
     //filtra por qualquer elemento
 console.log(itensChurrasco.filter((e,i)=> {
     return i!=2}));
+
+    console.log(JSON.stringify(itensChurrasco));
+    array2 = JSON.parse("[\"bla\", \"bla blar\"]")
+    console.log(array2[1])
