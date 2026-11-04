@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sorteio de número</title>
+
+        <style>
+            .container {
+                display: flex;
+                height: 100vh;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inputs {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+
+            .button {
+                color: antiquewhite;
+                background-color: hotpink;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+
+            .button:hover {
+                background-color: hotpink;
+            }
+
+            .button:active {
+                background-color: deeppink;
+            }
+
+            #historico {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="form">
+                <div class="inputs">
+
+                    <label for="min">mínimo</label>
+                    <input type="number" id="min">
+
+                    <label for="max">máximo</label>
+                    <input type="number" id="max">
+
+                </div>
+            </div>
+
+            <button class="button" id="botaoSortear">Sortear</button>
+
+            <div id="result"></div>
+            <div id="historico"></div>
+
+        </div>
+
+        <script>
+
+            var valoresSorteados = [];
+
+            botaoSortear = document.getElementById("botaoSortear");
+            min = document.getElementById("min");
+            max = document.getElementById("max");
+            result = document.getElementById("result");
+            historico = document.getElementById("historico");
+
+            botaoSortear.addEventListener("click", () => {
+
+                minimo = Number(min.value);
+                maximo = Number(max.value);
+
+                if (min.value === "" || max.value === "") {
+                    result.innerHTML = "Preencha os dois campos!";
+                    return;
+                }
+
+                if (minimo > maximo) {
+                    result.innerHTML = "O mínimo deve ser menor que o máximo!";
+                    return;
+                }
+
+                random = Math.floor(Math.random() * (maximo - minimo + 1)) + minimo;
+
+                valoresSorteados.push(random);
+                result.innerHTML = random;
+
+                div = document.createElement("div");
+                div.textContent = random;
+
+                historico.appendChild(div);
+
+                console.log(valoresSorteados);
+
+            });
+
+        </script>
+
+    </body>
+</html>
